@@ -1,40 +1,35 @@
-<!-- Go to this github repo  https://github.com/ashiksanyo10/Port_Temp.git and clone it to your local machine -->
-<!-- Open the local copy of code and edit the templete -->
-
-
-<!-- Dont alter any tags, fill in you information on required field only and dont alter style.css and javascript file-->
-<!-- once editing the templete, Create a github repo and push the code-->
-<!-- you can host the website on gitpages or netlify  -->
-<!---->
-
-
-
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Portfolio" />
+    <!-- #region Google Fonts Server -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- #endregion -->
+    <!-- #region Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <!-- #endregion -->
+    <!-- #region Font Awesome -->
     <script
       src="https://kit.fontawesome.com/fa62c117c7.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="styles.css" />
-    <title>Ashik Sanyo</title>    <!-- Change it your name  --> .
+    <!-- #endregion -->
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Ryan Nolasco D Mello</title>
   </head>
+
   <body class="light" id="top">
     <header class="header center">
       <h3>
-        <a href="" class="link"  
-          >{AS}. <!--insert your initials here --></a
-        >
-      </h3> <!--use the linkedIn or any link in above href-->
+        <a href="https://ryxndmello.vercel.app/" class="link">{RD}</a>
+      </h3>
 
       <nav class="nav center">
         <ul class="nav__list center">
@@ -45,11 +40,11 @@
             <a class="link link--nav" href="#skills">Skills</a>
           </li>
           <li class="nav__list-item">
-            <a class="link link--nav" href="#Internship">Internship</a>
+            <a class="link link--nav" href="#internship">Internship</a>
           </li>
-          <!--   <li class="nav__list-item">
-            <a class="link link--nav" href="#Exp">Experience</a>
-          </li>-->
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#experiencees">Experience</a>
+          </li>
         </ul>
 
         <button type="button" aria-label="toggle theme" class="btn btn--icon">
@@ -67,93 +62,85 @@
     </header>
 
     <main>
-      <!-- About -->
       <div class="about center">
-        <h1>Hi, I am <span class="about__name">Ashik Sanyo.</span></h1>
-        <h2 class="about__role">Aspiring DataScientist</h2>
-        <p class="about__desc"> <!-- Edit the About make sure you add your degree!-->
-          I'm a Tech geek living in Bangalore, India. I love to solve problems and build things. Also an Ex-TCSer and presently a Post grad Data Science student at Christ University!
-        </p> <!-- about you -->
-        <br>
-        <a href="mailto:ashiksanyo01@gmail.com">Mail: ashisanyo01@gmail.com </a><p> Contact: +91 63624 86106</p>  <!--Change it to your mail id and contact no-->
-      </br>
-      
-
-        <div class="about__contact center">
-          <a href="https://drive.google.com/file/d/1fiYlv7Ou0tKWSdUlQwpc5Ye3hDEya3kK/view" target="_blank"  > <!-- drive link for resume-->
-            <span class="btn btn--outline">Resume</span> 
-          </a>
-
-          <a
-            href="https://github.com/ashiksanyo10" target="_blank"
-            aria-label="github"
-            class="link link--icon"
-          >
-            <i aria-hidden="true" class="fab fa-github"></i>
-          </a> <!-- Github profile Link-->
-
-          <a
-            href="https://linkedin.com/in/ashiksanyo" target="_blank"  
-            aria-label="linkedin"
-            class="link link--icon"
-          > 
-            <i aria-hidden="true" class="fab fa-linkedin"></i>
-          </a> <!-- LinledIn profile Link-->
-        </div>
+        <h1>Hi, I am <span class="about__name">Ryan Nolasco D Mello</span></h1>
+        <h2 class="about__role">Aspiring Full Stack Developer</h2>
+        <p class="about__desc">
+          I am a driven and enthusiastic developer, from Bangalore, specializing
+          in full stack web and mobile application development. I utilize
+          cutting-edge technologies to seamlessly integrate frontend and backend
+          systems, creating immersive and feature-rich experiences.
+        </p>
+        <br />
+        <a href="mailto:ryan.dmello@bca.christuniversity.in">
+          Email: ryan.dmello@bca.christuniversity.in
+        </a>
+        <p>Contact: +91 9145000789</p>
       </div>
 
-      <!-- Projects -->
+      <div
+        style="display: flex; justify-content: center; align-items: center; gap: 1rem;"
+        class="about__contact center"
+      >
+        <a
+          href="https://drive.google.com/file/d/1fiYlv7Ou0tKWSdUlQwpc5Ye3hDEya3kK/view"
+          target="_blank"
+        >
+          <span class="btn btn--outline">Resume</span>
+        </a>
+
+        <a
+          href="https://github.com/RyxnDmello"
+          target="_blank"
+          class="link link--icon"
+          aria-label="github"
+        >
+          <i aria-hidden="true" class="fab fa-github"></i>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/ryanndmello/"
+          target="_blank"
+          class="link link--icon"
+          aria-label="linkedin"
+        >
+          <i aria-hidden="true" class="fab fa-linkedin"></i>
+        </a>
+      </div>
+
       <section id="projects" class="section projects">
         <h2 class="section__title">Projects</h2>
 
         <div class="projects__grid">
           <div class="project">
-            <h3>Ukraine Russia War Data Analysis</h3> <!--Peoject Title -->
+            <h3>Vibeout</h3>
+
             <p class="project__description">
-              2022 Ukraine Russia War Exploratory Data Analysis, Analysis was done on the day 167 of the war
-            </p> <!--Project description-->
+              Realtime Collaborative Chat and Project Management Application,
+              built with Next.js and MERN, offering seamless communication and
+              efficient project tracking to enhance team collaboration.
+            </p>
+
             <ul class="project__stack">
-              <li class="project__stack-item">Python</li>
-              <li class="project__stack-item">Excel</li>
-              <li class="project__stack-item">Plotly</li>
+              <li class="project__stack-item">Next.js</li>
+              <li class="project__stack-item">Node.js</li>
+              <li class="project__stack-item">Express.js</li>
+              <li class="project__stack-item">TypeScript</li>
+              <li class="project__stack-item">MongoDB</li>
+              <li class="project__stack-item">Firebase</li>
             </ul>
 
             <a
-              href="https://github.com/ashiksanyo10/Russia-Ukraine_War_EDA" target="_blank"
+              href="https://github.com/RyxnDmello/Vibeout"
+              target="_blank"
               aria-label="source code"
               class="link link--icon"
-            >  <!--Project link-->
-
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-            <a
-              href="https://example.com"
-              aria-label="live preview"
-              class="link link--icon"
-            > <!--Project demo or git link-->
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-            </a>
-          </div>
-
-          <div class="project">
-            <h3>Drone Detection - YOLO v8</h3>
-            <p class="project__description">
-              An image Classification model using YOLO, which is trained on custom dataset
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">Python</li>
-              <li class="project__stack-item">YOLO v8</li>
-            </ul>
-
-            <a
-              href="https://github.com/ashiksanyo10/DroneXYOLOv8" target="_blank"
-              aria-label="https://github.com/ashiksanyo10/DroneXYOLOv8" target="_blank"
-              class="link link--icon"
             >
               <i aria-hidden="true" class="fab fa-github"></i>
             </a>
+
             <a
-              href="https://example.com"
+              href="https://github.com/RyxnDmello/Vibeout"
               aria-label="live preview"
               class="link link--icon"
             >
@@ -162,25 +149,287 @@
           </div>
 
           <div class="project">
-            <h3>PowerBI Dashboards</h3>
+            <h3>Lightning</h3>
+
             <p class="project__description">
-              Developed a Business Intelligence portfolio with real-case reports showcasing data analysis expertise.
+              Lightning is a Next.js and MERN application for API testing,
+              featuring authentication, JSON handling, and response details.
+              Organize requests, track API history, and streamline workflows.
             </p>
+
             <ul class="project__stack">
-              <li class="project__stack-item">PowerBI</li>
-              <li class="project__stack-item">SQL</li>
-              <li class="project__stack-item">Excel</li>
+              <li class="project__stack-item">Next.js</li>
+              <li class="project__stack-item">Node.js</li>
+              <li class="project__stack-item">Express.js</li>
+              <li class="project__stack-item">TypeScript</li>
+              <li class="project__stack-item">MongoDB</li>
+              <li class="project__stack-item">Firebase</li>
             </ul>
 
             <a
-              href="https://www.novypro.com/profile_projects/ashiksanyo" target="_blank"
-              aria-label="https://www.novypro.com/project/us-sales-dash" target="_blank"
+              href="https://github.com/RyxnDmello/Lightning"
+              target="_blank"
+              aria-label="https://github.com/RyxnDmello/Lightning"
+              target="_blank"
               class="link link--icon"
             >
               <i aria-hidden="true" class="fab fa-github"></i>
             </a>
+
             <a
-              href="https://example.com"
+              href="https://github.com/RyxnDmello/Lightning"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>TaskTonic</h3>
+            <p class="project__description">
+              A Task Management application, built with MERN, providing an
+              effective solution for managing tasks and boosting productivity
+              with intuitive tools for organization, monitoring, and tracking.
+            </p>
+
+            <ul class="project__stack">
+              <li class="project__stack-item">Next.js</li>
+              <li class="project__stack-item">Node.js</li>
+              <li class="project__stack-item">Express.js</li>
+              <li class="project__stack-item">TypeScript</li>
+              <li class="project__stack-item">MongoDB</li>
+              <li class="project__stack-item">Firebase</li>
+            </ul>
+
+            <a
+              href="https://github.com/RyxnDmello/TaskTonic"
+              target="_blank"
+              aria-label="https://github.com/RyxnDmello/TaskTonic"
+              target="_blank"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+
+            <a
+              href="https://github.com/RyxnDmello/TaskTonic"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>CloudSense</h3>
+
+            <p class="project__description">
+              Realtime Weather Analysis application, built with MERN, enabling
+              users to create personalized weather stations for expedited
+              analysis. Delivers extensive weather details and forecasts.
+            </p>
+
+            <ul class="project__stack">
+              <li class="project__stack-item">Next.js</li>
+              <li class="project__stack-item">Node.js</li>
+              <li class="project__stack-item">Express.js</li>
+              <li class="project__stack-item">TypeScript</li>
+              <li class="project__stack-item">MongoDB</li>
+              <li class="project__stack-item">Firebase</li>
+            </ul>
+
+            <a
+              href="https://github.com/RyxnDmello/CloudSense"
+              target="_blank"
+              aria-label="https://github.com/RyxnDmello/CloudSense"
+              target="_blank"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+
+            <a
+              href="https://github.com/RyxnDmello/CloudSense"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Portfolio</h3>
+
+            <p class="project__description">
+              Explore my projects in Next.js, MERN, Flutter, and Unity. Discover
+              dynamic web apps, mobile solutions, and interactive experiences
+              showcasing my innovative development approach.
+            </p>
+
+            <ul class="project__stack">
+              <li class="project__stack-item">Next.js</li>
+              <li class="project__stack-item">Node.js</li>
+              <li class="project__stack-item">Express.js</li>
+              <li class="project__stack-item">TypeScript</li>
+              <li class="project__stack-item">MongoDB</li>
+              <li class="project__stack-item">Firebase</li>
+            </ul>
+
+            <a
+              href="https://github.com/RyxnDmello/RyxnPortfolio"
+              target="_blank"
+              aria-label="https://github.com/RyxnDmello/RyxnPortfolio"
+              target="_blank"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+
+            <a
+              href="https://github.com/RyxnDmello/RyxnPortfolio"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>TaskFlow</h3>
+
+            <p class="project__description">
+              A Task Management application, built with Flutter, which includes
+              features intuitive task organization and tracking, enhanced by a
+              realtime graph system for showcasing statistics and progress.
+            </p>
+
+            <ul class="project__stack">
+              <li class="project__stack-item">Flutter</li>
+              <li class="project__stack-item">Firebase</li>
+              <li class="project__stack-item">Riverpod</li>
+            </ul>
+
+            <a
+              href="https://github.com/RyxnDmello/TaskFlow"
+              target="_blank"
+              aria-label="https://github.com/RyxnDmello/TaskFlow"
+              target="_blank"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+
+            <a
+              href="https://github.com/RyxnDmello/TaskFlow"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>SkySync</h3>
+
+            <p class="project__description">
+              Realtime Weather Forecast mobile application, built with Flutter,
+              providing weather updates and features various graphs for
+              visualizing real-time weather statistics, and various graphical
+              insights.
+            </p>
+
+            <ul class="project__stack">
+              <li class="project__stack-item">Flutter</li>
+              <li class="project__stack-item">Firebase</li>
+              <li class="project__stack-item">Riverpod</li>
+            </ul>
+
+            <a
+              href="https://github.com/RyxnDmello/SkySync"
+              target="_blank"
+              aria-label="https://github.com/RyxnDmello/SkySync"
+              target="_blank"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+
+            <a
+              href="https://github.com/RyxnDmello/SkySync"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>PixelFlix</h3>
+
+            <p class="project__description">
+              A mobile application built with Flutter and Firebase for managing
+              movies, handling ticketing, and sharing film experiences. Enjoy a
+              seamless interface to discover, book, and share movies with
+              others.
+            </p>
+
+            <ul class="project__stack">
+              <li class="project__stack-item">Flutter</li>
+              <li class="project__stack-item">Firebase</li>
+              <li class="project__stack-item">Riverpod</li>
+            </ul>
+
+            <a
+              href="https://github.com/RyxnDmello/SkySync"
+              target="_blank"
+              aria-label="https://github.com/RyxnDmello/SkySync"
+              target="_blank"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+
+            <a
+              href="https://github.com/RyxnDmello/SkySync"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Codexo</h3>
+
+            <p class="project__description">
+              An Informative and Educational application that provides
+              comprehensive insights on various technologies, frameworks,
+              libraries, and IDEs. Designed to guide users about tools in the
+              tech landscape.
+            </p>
+
+            <ul class="project__stack">
+              <li class="project__stack-item">EJS</li>
+              <li class="project__stack-item">CSS</li>
+              <li class="project__stack-item">JavaScript</li>
+              <li class="project__stack-item">Node.js</li>
+              <li class="project__stack-item">Express.js</li>
+              <li class="project__stack-item">MongoDB</li>
+            </ul>
+
+            <a
+              href="https://github.com/RyxnDmello/Codexo"
+              target="_blank"
+              aria-label="https://github.com/RyxnDmello/Codexo"
+              target="_blank"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+
+            <a
+              href="https://github.com/RyxnDmello/Codexo"
               aria-label="live preview"
               class="link link--icon"
             >
@@ -190,73 +439,86 @@
         </div>
       </section>
 
-      <section id="Internship" class="section Internship" id="Internship">
-        <h2 class="section__title">Internships & Certifications</h2>
+      <section id="internship" class="section Internship" id="experience">
+        <h2 class="section__title">Experiences</h2>
 
-      <div class="project">
-        <h3>Open Weaver</h3>
-        <p class="project__description">
-          Developed several model using the prototype kit called KANDI.
-        </p>
-        <ul class="project__stack">
-          <li class="project__stack-item">Python</li>
-          <li class="project__stack-item">Gen -Ai</li>
-          <li class="project__stack-item">Machine Learning</li>
-        </ul>
+        <div class="project">
+          <h3>EveShark</h3>
 
-        <a
-          href=""  
-          aria-label="https://www.novypro.com/project/us-sales-dash" target="_blank"
-          class="link link--icon"
-        > <!-- Include the certification links and  -->
-          <i aria-hidden="true" class="fab fa-github"></i>
-        </a>
-        <a
-          href="https://example.com"
-          aria-label="live preview"
-          class="link link--icon"
-        >
-          <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
-    </div>
-  </section>
+          <p class="project__description">
+            Imagine hosting an unforgettable house party, a grand corporate
+            function, a lively community festival, seamless campus engagements,
+            or even a solo performance without the usual stress. With Eve Shark,
+            anyone can host an event anywhere whether it's in your living room,
+            at a local venue, or in a public park.
+          </p>
 
- <!-- duplicate the above section and you can change it to paper or experience-->
+          <ul class="project__stack">
+            <li class="project__stack-item">Next.js</li>
+            <li class="project__stack-item">Node.js</li>
+            <li class="project__stack-item">Express.js</li>
+            <li class="project__stack-item">MongoDB</li>
+            <li class="project__stack-item">Firebase</li>
+            <li class="project__stack-item">GitLab</li>
+            <li class="project__stack-item">Vercel</li>
+            <li class="project__stack-item">Render</li>
+            <li class="project__stack-item">Jest</li>
+          </ul>
 
-      
-      <!-- Skills -->
-      <section class="section skills" id="skills">
-        <h2 class="section__title">Skills</h2>
-        <ul class="skills__list">
-          <li class="skills__list-item btn btn--plain">HTML</li>                        <!--You can fill in the elective course and you can remove extras-->
-          <li class="skills__list-item btn btn--plain">CSS</li>
-          <li class="skills__list-item btn btn--plain">JavaScript</li>
-          <li class="skills__list-item btn btn--plain">React</li>
-          <li class="skills__list-item btn btn--plain">Python</li>
-          <li class="skills__list-item btn btn--plain">Machine Learning</li>
-          <li class="skills__list-item btn btn--plain">Computer Vision</li>
-          <li class="skills__list-item btn btn--plain">Git</li>
-          <li class="skills__list-item btn btn--plain">A/B Testing</li>
-          <li class="skills__list-item btn btn--plain">Adobe Creative Suit</li>
-        </ul>
+          <a
+            aria-label="https://www.linkedin.com/company/eve-shark/"
+            target="_blank"
+            class="link link--icon"
+            href=""
+          >
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/company/eve-shark/"
+            aria-label="live preview"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
       </section>
 
+      <section class="section skills" id="skills">
+        <h2 class="section__title">Skills</h2>
+
+        <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain">Next.js</li>
+          <li class="skills__list-item btn btn--plain">Node.js</li>
+          <li class="skills__list-item btn btn--plain">Express.js</li>
+          <li class="skills__list-item btn btn--plain">TypeScript</li>
+          <li class="skills__list-item btn btn--plain">JavaScript</li>
+          <li class="skills__list-item btn btn--plain">HTML</li>
+          <li class="skills__list-item btn btn--plain">SASS</li>
+          <li class="skills__list-item btn btn--plain">SCSS</li>
+          <li class="skills__list-item btn btn--plain">CSS</li>
+          <li class="skills__list-item btn btn--plain">TailwindCSS</li>
+          <li class="skills__list-item btn btn--plain">Bootstrap</li>
+          <li class="skills__list-item btn btn--plain">Jest</li>
+          <li class="skills__list-item btn btn--plain">GitLab</li>
+          <li class="skills__list-item btn btn--plain">JWT</li>
+          <li class="skills__list-item btn btn--plain">Git</li>
+        </ul>
+      </section>
+    </main>
+
     <footer class="footer">
-      <a
-        href="" 
-        class="link footer__link"
-      >  
-        Created By Ashik Sanyo! <!-- edit it to your name -->
+      <a href="https://ryxndmello.vercel.app/" class="link footer__link">
+        Created By Ryan Nolasco D Mello!
       </a>
     </footer>
 
     <div class="scroll-container">
-    <div class="scroll-top">
-      <a aria-label="Scroll up" href="#top">
-        <i aria-hidden="true" class="fas fa-arrow-up"></i>
-      </a>
-    </div>
+      <div class="scroll-top">
+        <a aria-label="Scroll up" href="#top">
+          <i aria-hidden="true" class="fas fa-arrow-up"></i>
+        </a>
+      </div>
     </div>
 
     <script src="./script.js"></script>
